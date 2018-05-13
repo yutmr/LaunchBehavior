@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C15029F520A7DEF700281C83 /* LaunchBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = C15029F320A7DEF700281C83 /* LaunchBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C15029FD20A7DF2A00281C83 /* LaunchBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15029FC20A7DF2A00281C83 /* LaunchBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C15029F020A7DEF700281C83 /* LaunchBehavior.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaunchBehavior.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15029F320A7DEF700281C83 /* LaunchBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchBehavior.h; sourceTree = "<group>"; };
 		C15029F420A7DEF700281C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15029FC20A7DF2A00281C83 /* LaunchBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +32,7 @@
 		C15029E620A7DEF700281C83 = {
 			isa = PBXGroup;
 			children = (
+				C15029FB20A7DF1900281C83 /* Sources */,
 				C15029F220A7DEF700281C83 /* LaunchBehavior */,
 				C15029F120A7DEF700281C83 /* Products */,
 			);
@@ -50,6 +53,14 @@
 				C15029F420A7DEF700281C83 /* Info.plist */,
 			);
 			path = LaunchBehavior;
+			sourceTree = "<group>";
+		};
+		C15029FB20A7DF1900281C83 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C15029FC20A7DF2A00281C83 /* LaunchBehavior.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +85,7 @@
 				C15029EC20A7DEF700281C83 /* Frameworks */,
 				C15029ED20A7DEF700281C83 /* Headers */,
 				C15029EE20A7DEF700281C83 /* Resources */,
+				C15029FE20A7DF5F00281C83 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					C15029EF20A7DEF700281C83 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -147,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15029FD20A7DF2A00281C83 /* LaunchBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -276,6 +290,7 @@
 		C15029F920A7DEF700281C83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -293,6 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yutmr.LaunchBehavior;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +317,7 @@
 		C15029FA20A7DEF700281C83 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
