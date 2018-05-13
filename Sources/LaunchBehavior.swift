@@ -51,7 +51,7 @@ public final class LaunchBehavior {
         clear()
     }
 
-    public func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) {
+    public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) {
         setCurrentLaunch(.urlScheme(url))
     }
 
