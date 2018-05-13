@@ -32,7 +32,7 @@ public final class LaunchBehavior {
     }
 
     private func setCurrentLaunch(_ launchSource: LaunchSource) {
-        guard currentLaunch != nil else {
+        guard currentLaunch == nil else {
             return
         }
         currentLaunch = launchSource
