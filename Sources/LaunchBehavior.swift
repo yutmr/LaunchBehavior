@@ -20,7 +20,7 @@ public enum LaunchSource {
 }
 
 public protocol LaunchBehaviorDelegate: class {
-    func launchBehavior(_ launchBehavior: LaunchBehavior, didLaunchApplication launchSouce: LaunchSource)
+    func launchBehavior(_ launchBehavior: LaunchBehavior, didLaunchApplication from: LaunchSource)
 }
 
 public final class LaunchBehavior {
