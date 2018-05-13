@@ -24,12 +24,11 @@ public protocol LaunchBehaviorDelegate: class {
 }
 
 public final class LaunchBehavior {
+    public static let shared = LaunchBehavior()
+
     public private(set) var currentLaunch: LaunchSource?
 
     public weak var delegate: LaunchBehaviorDelegate?
-
-    public init() {
-    }
 
     private func setCurrentLaunch(_ launchSource: LaunchSource) {
         guard currentLaunch == nil else {
