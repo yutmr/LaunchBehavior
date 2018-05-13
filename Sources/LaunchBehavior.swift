@@ -24,7 +24,7 @@ public protocol LaunchBehaviorDelegate: class {
 }
 
 public final class LaunchBehavior {
-    private(set) var currentLaunch: LaunchSource?
+    public private(set) var currentLaunch: LaunchSource?
 
     public weak var delegate: LaunchBehaviorDelegate?
 
