@@ -28,6 +28,9 @@ public final class LaunchBehavior {
 
     public weak var delegate: LaunchBehaviorDelegate?
 
+    public init() {
+    }
+
     private func setCurrentLaunch(_ launchSource: LaunchSource) {
         guard currentLaunch != nil else {
             return
